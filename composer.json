@@ -1,0 +1,41 @@
+{
+    "name": "mrhitss/gstin",
+    "type": "library",
+    "description": "A PHP package for accessing and interacting with the GSTIN API, enabling easy retrieval of GST-related information.",
+    "keywords": [
+        "http",
+        "rest",
+        "web service",
+        "gstin",
+        "laravel gstin"
+    ],
+    "require": {
+        "php": "^8.2",
+        "illuminate/support": "^9|^10|^11",
+        "guzzlehttp/guzzle": "^7"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Mrhitss\\Gstin\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Hitesh Varyani",
+            "email": "hiteshkv75@gmail.com",
+            "role": "developer"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Mrhitss\\Gstin\\Providers\\GstinServiceProvider"
+            ],
+            "aliases": {
+                "Gstin": "Mrhitss\\Gstin\\Facades\\Gstin"
+            }
+        }
+    },
+    "minimum-stability": "dev"
+}
